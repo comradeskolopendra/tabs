@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' type='text/css' href='style.css'>
+</head>
+<body>
+    <div class="container--main">
+        <div class='container__header'>
+            <img src='./images/back.svg' class='image__back'>
+            <h1>Вывод средств</h1>
+        </div>
+        <div class="container__paragraph">
+            <p class='text__grey_info'>Выигранные средства переведите на счет в банке, электронные кошельки или баланс сотового оператора.</p>
+        </div>
+        <div class='container__popup' id='popup'>
+            <form class="content__popup content__popup_margin_first" id='content' data-active-content='1'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <h3>На банковскую карту</h3>
+                <input type="text" placeholder='Сумма' class='popup__input'/>
+                <p class='popup__paragraph'>Комиссия: 2,5% мин. - 125 тг.</p>
+                <p>Сумма к выводу: <span>1 875 ₸</span></p>
+                <button class='popup__button' id='get__money'>Вывести</button>
+                <p class="popup__paragraph popup__margin">Перечисление денег занимает до 2 часов.</p>
+            </form>
+            <form class="content__popup content__popup_margin" id='content' data-active-content='2'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <h3>На баланс телефона</h3>
+                <input type="text" placeholder='Сумма' class='popup__input'/>
+                <p class='popup__paragraph'>Комиссия: 0%</p>
+                <p>Сумма к выводу: <span>2 000 ₸</span></p>
+                <input type='text' placeholder='Телефон' class='popup__input'/>
+                <button class='popup__button' id='get__money'>Вывести</button>
+                <p class="popup__paragraph popup__margin">Перечисление денег занимает до 2 часов.</p>
+            </form>
+            <form class="content__popup content__popup_margin" id='content' data-active-content='3'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <h3>На QIWI кошелек</h3>
+                <input type="text" placeholder='Сумма' class='popup__input'/>
+                <p class='popup__paragraph'>Комиссия: 0%</p>
+                <p>Сумма к выводу: <span>2 000 ₸</span></p>
+                <input type='text' placeholder='Телефон' class='popup__input'/>
+                <button class='popup__button' id='get__money'>Вывести</button>
+                <p class="popup__paragraph popup__margin">Перечисление денег занимает до 5 минут.</p>
+            </form>
+            <form class="content__popup content__popup_margin" id='content' data-active-content='4'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <h3>На кошелек kassa24</h3>
+                <input type="text" placeholder='Сумма' class='popup__input'/>
+                <p class='popup__paragraph'>Комиссия: 0%</p>
+                <p>Сумма к выводу: <span>2 000 ₸</span></p>
+                <input type='text' placeholder='Телефон' class='popup__input'/>
+                <button class='popup__button' id='get__money'>Вывести</button>
+                <p class="popup__paragraph popup__margin">Перечисление денег занимает до 10 минут.</p>
+            </form>
+        </div>
+        <div class='container__popup' id='popup_second'>
+            <form class="content__popup" id='content'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <p class='popup__paragraph'>Для вывода средств введите свой номер телефона в разделе "Профиль" и повторите попытку.</p>
+                <button class='popup__button popup__margin' id='profile__update'>Заполнить профиль</button>
+            </form>
+        </div>
+        <div class='container__popup' id='popup_third'>
+            <form class="content__popup" id='content'>
+                <img src="./images/close.svg" class='image__close'>
+                <h1 class='popup__header'>Вывод средств</h1>
+                <p class='popup__paragraph'>Введите код подтверждения, отправленный по смс на ваш номер.</p>
+                <div class='inputs__container'>
+                    <input type="text" class='input__number' maxlength="1" placeholder="*">
+                    <input type="text" class='input__number' maxlength="1" placeholder="*">
+                    <input type="text" class='input__number' maxlength="1" placeholder="*">
+                    <input type="text" class='input__number' maxlength="1" placeholder="*">
+                </div>
+                <button class='popup__button_disabled popup__margin' id='profile__update'>Отправить ещё раз <div class='border-right'></div> <span style='color: black; font-weight: 600;'>20</span></button>
+            </form>
+        </div>
+        <div class="container--variaty">
+            <div class="container__pay" data-active='1'>
+                <!-- <div class="grey_container__image">
+                    <img src="./images/card.ong" class='image__in_card'>
+                    <p class='text__in_card'>Банковская карта</p>
+                </div> -->
+            </div>
+            <div class="container__pay" data-active='2'>
+                <!-- <div class="grey_container__image">
+                    <img src="./images/phone.png" class='image__in_card'>
+                    <p class='text__in_card'>Сотовые операторы</p>
+                </div> -->
+            </div>
+            <div class="container__pay" data-active='3'>
+                <!-- <div class="grey_container__image">
+                    <img src="./images/qiwi.svg" class='image__in_card'>
+                    <p class='text__in_card'>QIWI кошелек</p>
+                </div> -->
+            </div>
+            <div class="container__pay" data-active='4'>
+                <!-- <div class="grey_container__image">
+                    <img src="./images/kassa24.svg" class='image__in_card'>
+                    <p class='text__in_card'>kassa24</p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src='index.js'></script>
+</body>
+</html>
